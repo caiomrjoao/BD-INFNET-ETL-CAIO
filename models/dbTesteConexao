@@ -1,0 +1,3 @@
+Select 
+    *
+from 'globalstream-retail.dim_cliente'

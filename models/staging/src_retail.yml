@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: bq_source
+    project: globalstream-retail
+    dataset: globlaStreamdataset
+    tables:
+      - name: fato_vendas
+      - name: dim_produto
+      - name: dim_vendedor

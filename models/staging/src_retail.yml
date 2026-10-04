@@ -2,9 +2,13 @@ version: 2
 
 sources:
   - name: bq_source
+    description: "Tabelas brutas de varejo ingeridas no BigQuery sob o projeto globalstream-retail."
     project: globalstream-retail
     dataset: globlaStreamdataset
     tables:
       - name: fato_vendas
+        description: "Transações de vendas, pedidos, frete e valores."
       - name: dim_produto
+        description: "Catálogo de produtos com dimensões físicas e categoria."
       - name: dim_vendedor
+        description: "Cadastro de vendedores com localização geográfica."

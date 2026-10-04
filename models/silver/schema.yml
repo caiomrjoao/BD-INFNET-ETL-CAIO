@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: int_vendas__enriquecidas
+    columns:
+      - name: id_pedido
+        tests:
+          - not_null
+      - name: faixa_ticket
+        tests:
+          - accepted_values:
+              values: ['Ticket Alto', 'Ticket Médio', 'Ticket Baixo']
+      - name: valor_total
+        tests:
+          - not_null

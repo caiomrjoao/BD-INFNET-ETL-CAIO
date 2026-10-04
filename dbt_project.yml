@@ -23,3 +23,6 @@ models:
     # Applies to all files under models/example/
     example:
       +materialized: table
+
+vars:
+  tax_rate: 0.12 # Alíquota de 12% configurável globalmente

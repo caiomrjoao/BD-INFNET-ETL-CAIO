@@ -18,7 +18,7 @@ transformado as (
         valor_frete,
 
         -- 3.2 e 9.2: Variável de Imposto e Indicador Financeiro
-        cast(round(valor_total * {{ var('tax_rate', 0.12) }}, 2) as numeric) as valor_imposto
+        cast(round(valor_total * {{ var('tax_rate', 0.12) }}, 2) as numeric) as valor_imposto,
 
         -- 9.2: Lucro Líquido com tratamento de nulos
         (coalesce(valor_total, 0) - coalesce(valor_frete, 0)) as lucro_liquido,
